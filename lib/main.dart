@@ -43,7 +43,9 @@ class MyInfoApp extends StatelessWidget {
               ),
             ),
           ),
-          Container(margin: EdgeInsets.only(bottom: 10.0), child: kCircle),
+          Container(
+            margin: EdgeInsets.only(bottom: 5.0),
+              child: kCircle),
           const SizedBox(
             height: 10.0,
           ),
@@ -92,9 +94,9 @@ class MyInfoApp extends StatelessWidget {
             margin: EdgeInsets.all(20.0),
             child: ListTile(
               leading: Icon(Icons.mail),
-                    title: Text(
-                      'yourtowelplug@gmil.com',
-                      style: kPhoneNumberText,
+              title: Text(
+                'yourtowelplug@gmil.com',
+                style: kPhoneNumberText,
               ),
             ),
           ),

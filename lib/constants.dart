@@ -26,14 +26,7 @@ const kPhoneNumberText = TextStyle(
   fontSize: 24.0,
   fontWeight: FontWeight.w600,
 );
-//
-// const kEmailCard = ListTile(
-//   leading: Icon(Icons.mail),
-//   title: Text(
-//     'yourtowelplug@gmil.com',
-//     style: TextStyle(
-//       fontSize: 24.0,
-//       fontWeight: FontWeight.w600,
-//     ),
-//   ),
-// );
+const ktextStyle = TextStyle(fontSize: 18.0,
+  fontWeight: FontWeight.w500,
+
+);

@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
+import 'reusablewidget.dart';
+
 
 class CartScreen extends StatelessWidget {
-  const CartScreen({Key? key}) : super(key: key);
+  // const CartScreen({Key? key}) : super(key: key);
 
+  // late String size;
+  // late int price;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,84 +16,111 @@ class CartScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              const Text(
-                'End Of The Year Sales!',
-                style: kHeadText,
-                textAlign: TextAlign.end,
-              ),
-              Column(
+              // const Text(
+              //   'End Of The Year Sales!',
+              //   style: kHeadText,
+              //   textAlign: TextAlign.end,
+              // ),
+              Row(
                 children: [
-                  Container(
-                    width: 390.0,
-                    child: const Image(
-                      image: AssetImage('images/miniStriped.jpeg'),
-                    ),
+              //     const reusable_widget(
+              // image: AssetImage('images/whiteLarge.jpeg'),
+              //       'SuperFluffy Large Towel\n 10,000NGN',
+              //     ),
+                  Column(
+                    children: [
+                      Container(
+                        child: Column(
+                          children: [
+                            Image(
+                              image: AssetImage('images/whiteLarge.jpeg'),
+                              width: 204.0,
+                              height: 270.0,
+                            ),
+                          ],
+                        ),
+                      ),
+                      const Text(
+                        'SuperFluffy Large Towel\n 10,000NGN',
+                        style: ktextStyle,
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
                   ),
-                  const Text(
-                    'Price: #200',
-                    textAlign: TextAlign.start,
-                  ),
-                  const Text('Size: Large'),
                 ],
               ),
-              Column(
+
+              Row(
                 children: [
-                  Container(
-                    width: 390.0,
-                    child: Image(
-                      image: AssetImage('images/largeStriped.jpeg'),
-                    ),
+                  Column(
+                    children: [
+                      Container(
+                        child: const Image(
+                          image: AssetImage('images/StripeLargee.jfif'),
+                          width: 204.0,
+                          height: 270.0,
+                        ),
+                      ),
+                      const Text(
+                        'Striped Large Towel\n 7,500NGN',
+                        style: ktextStyle,
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
                   ),
-                  const Text(
-                    'Price: #200',
-                    textAlign: TextAlign.start,
+                  Column(
+                    children: [
+                      Container(
+                        child: Image(
+                          image: AssetImage('images/laarge1.jfif'),
+                          width: 204.0,
+                          height: 270.0,
+                        ),
+                      ),
+                      const Text(
+                        'Super Fluffy Large Size\n 10,000NGN',
+                        style: ktextStyle,
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
                   ),
-                  Text('Size: Large'),
                 ],
               ),
-              Column(
+
+              Row(
                 children: [
-                  Container(
-                    width: 390.0,
-                    child: const Image(
-                      image: AssetImage('images/largeTowels.jpeg'),
-                    ),
+                  Column(
+                    children: [
+                      Container(
+                        child: const Image(
+                          image: AssetImage('images/extralargee.jfif'),
+                          width: 204.0,
+                          height: 270.0,
+                        ),
+                      ),
+                      const Text(
+                        'Super Fluffy Extra Large\n13,000NGN',
+                        style: ktextStyle,
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
                   ),
-                  const Text(
-                    'Price: #200',
-                    textAlign: TextAlign.start,
+                  Column(
+                    children: [
+                      Container(
+                        child: Image(
+                          image: AssetImage('images/largee2.jfif'),
+                          width: 204.0,
+                          height: 270.0,
+                        ),
+                      ),
+                      const Text(
+                        'Large\n 7,500NGN',
+                        style: ktextStyle,
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
                   ),
-                  const Text('Size: Large'),
-                ],
-              ),
-              Column(
-                children: [
-                  Container(
-                    width: 390.0,
-                    child: const Image(
-                      image: AssetImage('images/LargeExtraLarge.jpeg'),
-                    ),
-                  ),
-                  const Text(
-                    'Price: #200',
-                    textAlign: TextAlign.start,
-                  ),
-                  const Text('Size: Large'),
-                ],
-              ),
-              Column(
-                children: [
-                  Container(
-                    width: 390.0,
-                    child: const Image(
-                      image: AssetImage('images/whiteLarge.jpeg'),
-                    ),
-                  ),
-                  const Text(
-                    'Price: #200',
-                    textAlign: TextAlign.start,
-                  ),
-                  Text('Size: Large'),
                 ],
               ),
             ],
@@ -99,3 +130,5 @@ class CartScreen extends StatelessWidget {
     );
   }
 }
+
+
