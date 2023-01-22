@@ -1,125 +1,67 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
-import 'reusablewidget.dart';
 
+import 'productList.dart';
 
 class CartScreen extends StatelessWidget {
-  // const CartScreen({Key? key}) : super(key: key);
-
-  // late String size;
-  // late int price;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Towels Category'),
+      ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: SafeArea(
+        child: Expanded(
           child: Column(
             children: [
-              // const Text(
-              //   'End Of The Year Sales!',
-              //   style: kHeadText,
-              //   textAlign: TextAlign.end,
-              // ),
               Row(
                 children: [
-              //     const reusable_widget(
-              // image: AssetImage('images/whiteLarge.jpeg'),
-              //       'SuperFluffy Large Towel\n 10,000NGN',
-              //     ),
-                  Column(
-                    children: [
-                      Container(
-                        child: Column(
-                          children: [
-                            Image(
-                              image: AssetImage('images/whiteLarge.jpeg'),
-                              width: 204.0,
-                              height: 270.0,
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Text(
-                        'SuperFluffy Large Towel\n 10,000NGN',
-                        style: ktextStyle,
-                        textAlign: TextAlign.start,
-                      ),
-                    ],
+                  ProductDisplay(
+                    productImage: 'images/whiteLarge.jpeg',
+                    productPrice: '10,000NGN',
+                    productTitle: 'Super Fluffy Large Towel',
+                  ),
+                  SizedBox(
+                    width: 11.0,
+                  ),
+                  ProductDisplay(
+                    productImage: 'images/laarge1.jfif',
+                    productPrice: '10,000NGN',
+                    productTitle: 'Super Fluffy Large',
                   ),
                 ],
               ),
-
               Row(
                 children: [
-                  Column(
-                    children: [
-                      Container(
-                        child: const Image(
-                          image: AssetImage('images/StripeLargee.jfif'),
-                          width: 204.0,
-                          height: 270.0,
-                        ),
-                      ),
-                      const Text(
-                        'Striped Large Towel\n 7,500NGN',
-                        style: ktextStyle,
-                        textAlign: TextAlign.start,
-                      ),
-                    ],
+                  ProductDisplay(
+                    productImage: 'images/miniStriped.jpeg',
+                    productPrice: '3500NGN',
+                    productTitle: 'Mini Striped Towel',
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        child: Image(
-                          image: AssetImage('images/laarge1.jfif'),
-                          width: 204.0,
-                          height: 270.0,
-                        ),
-                      ),
-                      const Text(
-                        'Super Fluffy Large Size\n 10,000NGN',
-                        style: ktextStyle,
-                        textAlign: TextAlign.start,
-                      ),
-                    ],
+                  SizedBox(
+                    width: 11.0,
+                  ),
+                  ProductDisplay(
+                    productImage: 'images/StripeLargee.jfif',
+                    productPrice: '7,500NGN',
+                    productTitle: 'Striped Large Towel',
                   ),
                 ],
               ),
-
               Row(
                 children: [
-                  Column(
-                    children: [
-                      Container(
-                        child: const Image(
-                          image: AssetImage('images/extralargee.jfif'),
-                          width: 204.0,
-                          height: 270.0,
-                        ),
-                      ),
-                      const Text(
-                        'Super Fluffy Extra Large\n13,000NGN',
-                        style: ktextStyle,
-                        textAlign: TextAlign.start,
-                      ),
-                    ],
+                  ProductDisplay(
+                    productImage: 'images/extralargee.jfif',
+                    productPrice: '13,000NGN',
+                    productTitle: 'Super Fluffy Extra Large Towel',
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        child: Image(
-                          image: AssetImage('images/largee2.jfif'),
-                          width: 204.0,
-                          height: 270.0,
-                        ),
-                      ),
-                      const Text(
-                        'Large\n 7,500NGN',
-                        style: ktextStyle,
-                        textAlign: TextAlign.start,
-                      ),
-                    ],
+                  SizedBox(
+                    width: 11.0,
+                  ),
+                  ProductDisplay(
+                    productImage: 'images/largee2.jfif',
+                    productPrice: '7,500,000NGN',
+                    productTitle: 'Large Towel',
                   ),
                 ],
               ),
@@ -130,5 +72,3 @@ class CartScreen extends StatelessWidget {
     );
   }
 }
-
-

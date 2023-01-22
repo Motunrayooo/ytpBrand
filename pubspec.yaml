@@ -84,6 +84,9 @@ flutter:
     - family: CreteRound
       fonts:
         - asset: fonts/CreteRound-Regular.ttf
-  #
+    - family: TitilliumWeb
+      fonts:
+        - asset: fonts/TitilliumWeb-LightItalic.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -26,7 +26,19 @@ const kPhoneNumberText = TextStyle(
   fontSize: 24.0,
   fontWeight: FontWeight.w600,
 );
-const ktextStyle = TextStyle(fontSize: 18.0,
+const ktextStyle = TextStyle(
+  fontSize: 18.0,
   fontWeight: FontWeight.w500,
+);
 
+const kProductTitleStyle = TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 14.0,
+    fontFamily: 'CreteRound',
+);
+
+const kProductPriceStyle = TextStyle(
+    fontWeight: FontWeight.bold,
+
+  
 );
